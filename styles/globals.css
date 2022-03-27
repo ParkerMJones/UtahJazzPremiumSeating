@@ -13,3 +13,16 @@
     height: 0;
   }
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .spacing {
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+}

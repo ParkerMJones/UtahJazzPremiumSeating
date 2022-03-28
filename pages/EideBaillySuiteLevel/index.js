@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css";
@@ -28,7 +29,13 @@ import plusIcon from "../../assets/images/plusIcon.png";
 
 function EideBaillySuiteLevel() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { duration: 0.75, ease: [0.61, 1, 0.88, 1] },
+      }}
+    >
       {/* Navbar */}
 
       <div className="bg-black border-t">
@@ -479,7 +486,7 @@ function EideBaillySuiteLevel() {
 
       {/* Contact */}
       <Contact />
-    </>
+    </motion.div>
   );
 }
 

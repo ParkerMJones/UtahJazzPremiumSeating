@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
 
 import ImageWithText from "../components/ImageWithText";
 import ImageCard from "../components/ImageCard";
@@ -23,9 +24,14 @@ import jazzIcon from "../assets/images/jazzIcon.png";
 
 export default function Home() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { duration: 0.75, ease: [0.61, 1, 0.88, 1] },
+      }}
+    >
       {/* Navbar */}
-
       <div className="bg-black border-t">
         <nav className="px-16 sm:spacing text-white">
           <div className="border-b flex items-center justify-between gap-8">
@@ -155,6 +161,6 @@ export default function Home() {
 
       {/* Contact */}
       <Contact />
-    </>
+    </motion.div>
   );
 }

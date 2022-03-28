@@ -15,7 +15,7 @@
 }
 
 @layer base {
-  html {
+  html:focus-within {
     scroll-behavior: smooth;
   }
 }

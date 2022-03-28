@@ -5,7 +5,7 @@ import ButtonOutline from "./Button";
 function ImageCard({ image, title, text, destination }) {
   return (
     <Link href={destination} passHref>
-      <div className="bg-black text-white max-w-xl w-full hover:cursor-pointer">
+      <a className="bg-black text-white max-w-xl w-full hover:cursor-pointer">
         <Image
           src={image}
           width={600}
@@ -26,7 +26,7 @@ function ImageCard({ image, title, text, destination }) {
             Learn More
           </ButtonOutline>
         </div>
-      </div>
+      </a>
     </Link>
   );
 }

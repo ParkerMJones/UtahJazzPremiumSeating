@@ -12,7 +12,7 @@ function Contact() {
         <h2 className="text-3xl text-white py-8 font-bold uppercase">
           Contact Us
         </h2>
-        <div className="grid grid-cols-2 gap-20">
+        <div className="grid grid-cols-2 gap-12">
           <div className="flex flex-col gap-6">
             <div className="flex gap-2 items-center">
               <Image

@@ -4,7 +4,7 @@ function ButtonOutline({ text, isYellow, icon }) {
   return (
     <button
       type="button"
-      className={`font-semibold rounded bg-transparent px-6 py-1 my-2 max-w-fit min-w-fit whitespace-nowrap h-fit cursor-pointer flex items-center justify-between gap-2 border ${
+      className={`font-semibold text-sm rounded bg-transparent px-4 py-1 my-2 max-w-fit min-w-fit whitespace-nowrap h-fit cursor-pointer flex items-center justify-between gap-2 border ${
         isYellow
           ? "text-jazz-yellow border-jazz-yellow"
           : "text-black border-black"

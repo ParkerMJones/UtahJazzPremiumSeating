@@ -27,32 +27,34 @@ export default function Home() {
       {/* Navbar */}
 
       <div className="bg-black">
-        <nav className="spacing text-white border-b py-1 flex items-center justify-between">
-          <Link href="/" passHref>
-            <a className="flex max-w-fit items-center gap-4">
-              <Image src={jazzIcon} width={45} height={45} alt="Jazz Icon" />
-              <h3 className="uppercase">Utah Jazz Premium Seating</h3>
-            </a>
-          </Link>
-          <ol className="flex gap-12 text-jazz-yellow text-sm">
-            <li>
-              <Link href="/#luxury-suites">Luxury Suites</Link>
-            </li>
-            <li>
-              <Link href="/#exclusive-clubs">Exclusive Clubs</Link>
-            </li>
-            <li>
-              <Link href="/#contact">Contact Us</Link>
-            </li>
-          </ol>
+        <nav className="spacing text-white">
+          <div className="border-b flex items-center justify-between py-2">
+            <Link href="/" passHref>
+              <a className="flex max-w-fit items-center gap-4">
+                <Image src={jazzIcon} width={42} height={42} alt="Jazz Icon" />
+                <h3 className="uppercase text-sm">Utah Jazz Premium Seating</h3>
+              </a>
+            </Link>
+            <ol className="flex gap-10 text-jazz-yellow text-xs">
+              <li>
+                <Link href="/#luxury-suites">Luxury Suites</Link>
+              </li>
+              <li>
+                <Link href="/#exclusive-clubs">Exclusive Clubs</Link>
+              </li>
+              <li>
+                <Link href="/#contact">Contact Us</Link>
+              </li>
+            </ol>
+          </div>
         </nav>
       </div>
 
       {/* Hero */}
 
       <section className="bg-black">
-        <div className="spacing py-32 flex flex-col justify-center items-center gap-4">
-          <h1 className="text-6xl text-white font-semibold uppercase">
+        <div className="spacing py-24 pb-32 flex flex-col justify-center items-center gap-4">
+          <h1 className="text-5xl text-white font-semibold uppercase">
             Premium Seating
           </h1>
           <h2 className="text-jazz-yellow uppercase text-3xl pb-2">
@@ -100,10 +102,10 @@ export default function Home() {
 
       <section className="bg-black" id="luxury-suites">
         <div className="spacing">
-          <h2 className="text-jazz-yellow text-4xl uppercase font-semibold py-16">
+          <h2 className="text-jazz-yellow text-3xl uppercase font-semibold py-16">
             Luxury Suites
           </h2>
-          <div className="grid grid-cols-2 grid-rows-2 gap-x-8 gap-y-4">
+          <div className="grid grid-cols-2 grid-rows-2 gap-x-7 gap-y-4">
             <Link href="/EideBaillySuiteLevel" passHref>
               <a>
                 <ImageWithText image={EBS4} text="Eide Bailly Suite Level" />
@@ -120,10 +122,10 @@ export default function Home() {
 
       <section className="bg-black" id="exclusive-clubs">
         <div className="spacing pb-24">
-          <h2 className="text-jazz-yellow text-4xl uppercase font-semibold py-16">
+          <h2 className="text-jazz-yellow text-3xl uppercase font-semibold py-12 pt-16">
             Exclusive Clubs
           </h2>
-          <div className="grid grid-cols-2 grid-rows-3 gap-x-8 gap-y-4">
+          <div className="grid grid-cols-2 grid-rows-3 gap-x-7 gap-y-4">
             <ImageWithText image={toyotaClub} text="Toyota Club" />
             <ImageWithText image={eideBaillyClub} text="Eide Bailly Club" />
             <ImageWithText image={WCF} text="WCF Insurance Club" />

@@ -10,7 +10,7 @@ function ImageWithText({ text, subtext, image }) {
         alt={text}
         className="w-full h-full object-cover brightness-50"
       />
-      <div className="text-3xl text-center absolute top-0 bottom-0 left-0 right-0 m-auto text-white h-fit uppercase">
+      <div className="text-2xl text-center absolute top-0 bottom-0 left-0 right-0 m-auto text-white h-fit uppercase">
         <h1>{text}</h1>
         <h1>{subtext}</h1>
       </div>

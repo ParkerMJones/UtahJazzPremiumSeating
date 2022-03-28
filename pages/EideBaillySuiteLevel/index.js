@@ -14,21 +14,6 @@ import DigitalTickets from "../../components/DigitalTickets";
 import Contact from "../../components/Contact";
 import ButtonOutline, { ButtonSolid } from "../../components/Button";
 
-import EBS2 from "../../assets/images/JAZ2122_Premium_EBS2.jpg";
-import EBS4 from "../../assets/images/JAZ2122_Premium_EBS4.jpg";
-import EBS5 from "../../assets/images/JAZ2122_Premium_EBS5.jpg";
-
-import jazzIcon from "../../assets/images/jazzIcon.png";
-import downloadIcon from "../../assets/images/downloadIcon.png";
-import infoIcon from "../../assets/images/infoIcon.svg";
-import locationIcon from "../../assets/images/locationIcon.png";
-import capacityIcon from "../../assets/images/capacityIcon.png";
-import bulbIcon from "../../assets/images/bulbIcon.png";
-import carIcon from "../../assets/images/carIcon.png";
-import signpostIcon from "../../assets/images/signpostIcon.png";
-import checkmarkIcon from "../../assets/images/checkmarkIcon.png";
-import plusIcon from "../../assets/images/plusIcon.png";
-
 function EideBaillySuiteLevel() {
   return (
     <>
@@ -36,14 +21,13 @@ function EideBaillySuiteLevel() {
         <title>Eide Bailly Suite Level</title>
       </Head>
       <motion.div
-        initial={{ opacity: 1 }}
+        initial={{ filter: "brightness(0%)" }}
         animate={{
-          opacity: 1,
-          transition: { duration: 0.75, ease: [0.61, 1, 0.88, 1] },
+          filter: "brightness(100%)",
+          transition: { duration: 0.5, ease: [0.61, 1, 0.88, 1] },
         }}
         exit={{
-          opacity: 0,
-          transition: { duration: 0.75, ease: [0.61, 1, 0.88, 1] },
+          filter: "brightness(0%)",
         }}
       >
         {/* Navbar */}
@@ -52,7 +36,12 @@ function EideBaillySuiteLevel() {
           <nav className="px-8 md:spacing text-white flex items-center justify-between gap-8">
             <Link href="/" passHref>
               <a className="flex max-w-fit items-center gap-3 shrink-0 py-1.5">
-                <Image src={jazzIcon} width={48} height={48} alt="Jazz Icon" />
+                <Image
+                  src="/jazzIcon.png"
+                  width={48}
+                  height={48}
+                  alt="Jazz Icon"
+                />
                 <h3 className="uppercase text-md hidden sm:block mt-2">
                   Utah Jazz Premium Seating
                 </h3>
@@ -82,7 +71,7 @@ function EideBaillySuiteLevel() {
               <ButtonOutline
                 isYellow={false}
                 text="Download Info"
-                icon={downloadIcon}
+                icon="/downloadIcon.png"
               />
               <Link href="/EideBaillySuiteLevel/#contact" passHref>
                 <a>
@@ -105,7 +94,7 @@ function EideBaillySuiteLevel() {
           >
             <SwiperSlide>
               <Image
-                src={EBS2}
+                src="/JAZ2122_Premium_EBS2.jpg"
                 layout="fill"
                 alt="Eide Bailly Suite"
                 objectFit="cover"
@@ -113,7 +102,7 @@ function EideBaillySuiteLevel() {
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src={EBS4}
+                src="/JAZ2122_Premium_EBS4.jpg"
                 layout="fill"
                 alt="Eide Bailly Suite"
                 objectFit="cover"
@@ -121,7 +110,7 @@ function EideBaillySuiteLevel() {
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src={EBS5}
+                src="/JAZ2122_Premium_EBS5.jpg"
                 layout="fill"
                 alt="Eide Bailly Suite"
                 objectFit="cover"
@@ -134,7 +123,12 @@ function EideBaillySuiteLevel() {
         <section className="bg-jazz-yellow">
           <div className="px-4 md:spacing flex gap-4 py-4 items-center">
             <div className="shrink-0 py-6">
-              <Image src={infoIcon} width={48} height={48} alt="Information" />
+              <Image
+                src="/infoIcon.svg"
+                width={48}
+                height={48}
+                alt="Information"
+              />
             </div>
             <p className="font-bold text-lg">
               Did you know? Whether you're closing an important business deal or
@@ -158,7 +152,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="mt-1 mx-2 shrink-0">
                     <Image
-                      src={locationIcon}
+                      src="/locationIcon.png"
                       width={24}
                       height={24}
                       alt="Location"
@@ -173,7 +167,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="mr-2 shrink-0">
                     <Image
-                      src={capacityIcon}
+                      src="/capacityIcon.png"
                       width={32}
                       height={32}
                       alt="Capacity"
@@ -189,7 +183,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="mr-2 mt-1 shrink-0">
                     <Image
-                      src={bulbIcon}
+                      src="/bulbIcon.png"
                       width={24}
                       height={24}
                       alt="Event Availability"
@@ -219,7 +213,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="shrink-0 mr-2">
                     <Image
-                      src={checkmarkIcon}
+                      src="/checkmarkIcon.png"
                       width={20}
                       height={20}
                       alt="Checkmark"
@@ -230,7 +224,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="shrink-0 mr-2">
                     <Image
-                      src={checkmarkIcon}
+                      src="/checkmarkIcon.png"
                       width={20}
                       height={20}
                       alt="Checkmark"
@@ -241,7 +235,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="shrink-0 mr-2">
                     <Image
-                      src={checkmarkIcon}
+                      src="/checkmarkIcon.png"
                       width={20}
                       height={20}
                       alt="Checkmark"
@@ -255,7 +249,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="shrink-0 mr-2">
                     <Image
-                      src={checkmarkIcon}
+                      src="/checkmarkIcon.png"
                       width={20}
                       height={20}
                       alt="Checkmark"
@@ -269,7 +263,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="shrink-0 mr-2">
                     <Image
-                      src={checkmarkIcon}
+                      src="/checkmarkIcon.png"
                       width={20}
                       height={20}
                       alt="Checkmark"
@@ -282,7 +276,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="shrink-0 mr-2">
                     <Image
-                      src={checkmarkIcon}
+                      src="/checkmarkIcon.png"
                       width={20}
                       height={20}
                       alt="Checkmark"
@@ -293,7 +287,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="shrink-0 mr-2">
                     <Image
-                      src={checkmarkIcon}
+                      src="/checkmarkIcon.png"
                       width={20}
                       height={20}
                       alt="Checkmark"
@@ -304,7 +298,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="shrink-0 mr-2">
                     <Image
-                      src={checkmarkIcon}
+                      src="/checkmarkIcon.png"
                       width={20}
                       height={20}
                       alt="Checkmark"
@@ -315,7 +309,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="shrink-0 mr-2">
                     <Image
-                      src={checkmarkIcon}
+                      src="/checkmarkIcon.png"
                       width={20}
                       height={20}
                       alt="Checkmark"
@@ -326,7 +320,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="shrink-0 mr-2">
                     <Image
-                      src={checkmarkIcon}
+                      src="/checkmarkIcon.png"
                       width={20}
                       height={20}
                       alt="Checkmark"
@@ -350,7 +344,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="mr-1 -mt-1 shrink-0">
                     <Image
-                      src={carIcon}
+                      src="/carIcon.png"
                       width={32}
                       height={32}
                       alt="VIP Parking"
@@ -369,7 +363,7 @@ function EideBaillySuiteLevel() {
                 <div className="flex">
                   <div className="mr-2 shrink-0">
                     <Image
-                      src={signpostIcon}
+                      src="/signpostIcon.png"
                       width={24}
                       height={24}
                       alt="Check-In Locations"
@@ -394,7 +388,7 @@ function EideBaillySuiteLevel() {
               <div className="flex items-center text-center sm:text-left justify-center md:justify-start pt-8 md:py-8 -ml-5 md:ml-0">
                 <div className="shrink-0 mr-3 sm:mr-5 mt-2">
                   <Image
-                    src={plusIcon}
+                    src="/plusIcon.png"
                     width={28}
                     height={28}
                     alt="Possible Uses"
@@ -478,7 +472,7 @@ function EideBaillySuiteLevel() {
         <section>
           <div className="w-screen h-[600px] relative">
             <Image
-              src={EBS5}
+              src="/JAZ2122_Premium_EBS5.jpg"
               layout="fill"
               alt="Eide Bailly Suite"
               objectFit="cover"

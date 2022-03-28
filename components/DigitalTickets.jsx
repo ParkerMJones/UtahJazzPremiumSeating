@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import videoThumbnail from "../assets/images/video-thumbnail.png";
-
 function DigitalTickets() {
   return (
     <section className="bg-digital-gray">
@@ -52,7 +50,7 @@ function DigitalTickets() {
         </div>
         <div className="hidden lg:block">
           <Image
-            src={videoThumbnail}
+            src="/video-thumbnail.png"
             width={360}
             height={150}
             alt="Video Thumbnail"

@@ -2,9 +2,6 @@ import Image from "next/image";
 
 import { ButtonSolid } from "./Button";
 
-import phone from "../assets/images/phone.svg";
-import mail from "../assets/images/mail.svg";
-
 function Contact() {
   return (
     <section className="bg-neutral-800" id="contact">
@@ -16,7 +13,7 @@ function Contact() {
           <div className="flex flex-col gap-6">
             <div className="flex gap-2 items-center">
               <Image
-                src={phone}
+                src="/phone.svg"
                 width={24}
                 height={24}
                 alt="Phone Number"
@@ -27,7 +24,7 @@ function Contact() {
               </p>
             </div>
             <div className="flex gap-2 items-center -ml-1">
-              <Image src={mail} width={32} height={32} alt="Email" />
+              <Image src="/mail.svg" width={32} height={32} alt="Email" />
               <p className="font-mono text-xl">bizdev@utahjazz.com</p>
             </div>
             <p className="text-lg">
@@ -42,21 +39,21 @@ function Contact() {
               <label htmlFor="input">User Input</label>
               <input
                 type="text"
-                className="rounded-tr rounded-bl py-1.5 text-black"
+                className="rounded-tr rounded-bl py-1.5 px-2 text-black"
               />
             </div>
             <div className="flex flex-col">
               <label htmlFor="input">User Input</label>
               <input
                 type="text"
-                className="rounded-tr rounded-bl py-1.5 text-black"
+                className="rounded-tr rounded-bl py-1.5 px-2 text-black"
               />
             </div>
             <div className="flex flex-col">
               <label htmlFor="input">User Input</label>
               <input
                 type="text"
-                className="rounded-tr rounded-bl py-1.5 text-black"
+                className="rounded-tr rounded-bl py-1.5 px-2 text-black"
               />
             </div>
             <div className="flex flex-col">
@@ -74,7 +71,7 @@ function Contact() {
               <label htmlFor="message">Short Text</label>
               <textarea
                 type="text"
-                className="rounded-tr rounded-bl py-3 resize-none text-black"
+                className="rounded-tr rounded-bl py-3 px-2 resize-none text-black"
               />
             </div>
             <div className="-ml-[1px]">

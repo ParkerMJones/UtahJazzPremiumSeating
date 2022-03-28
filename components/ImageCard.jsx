@@ -13,7 +13,7 @@ function ImageCard({ image, title, text, destination }) {
           alt={title}
           objectFit="cover"
         />
-        <div className="px-8 md:h-96 lg:h-72 grid grid-rows-5 py-4 mb-2 items-start">
+        <div className="px-8 md:96 lg:h-72 grid grid-rows-7 py-4 mb-2 items-start gap-y-2">
           <h2 className="text-2xl text-jazz-yellow font-bold row-span-1">
             {title}
           </h2>

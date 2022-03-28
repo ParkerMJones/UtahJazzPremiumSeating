@@ -31,15 +31,17 @@ function EideBaillySuiteLevel() {
     <>
       {/* Navbar */}
 
-      <div className="bg-black">
-        <nav className="spacing text-white py-1 flex items-center justify-between">
+      <div className="bg-black border-t">
+        <nav className="px-8 md:spacing text-white flex items-center justify-between gap-8">
           <Link href="/" passHref>
-            <a className="flex max-w-fit items-center gap-4">
-              <Image src={jazzIcon} width={40} height={40} alt="Jazz Icon" />
-              <h3 className="uppercase text-sm">Utah Jazz Premium Seating</h3>
+            <a className="flex max-w-fit items-center gap-3 shrink-0 py-1.5">
+              <Image src={jazzIcon} width={48} height={48} alt="Jazz Icon" />
+              <h3 className="uppercase text-md hidden sm:block mt-2">
+                Utah Jazz Premium Seating
+              </h3>
             </a>
           </Link>
-          <ol className="flex gap-10 text-jazz-yellow text-xs">
+          <ol className="flex gap-10 text-jazz-yellow text-sm">
             <li>
               <Link href="/#luxury-suites">Luxury Suites</Link>
             </li>
@@ -55,8 +57,8 @@ function EideBaillySuiteLevel() {
 
       {/* Header Banner */}
       <section>
-        <div className="spacing flex justify-between items-center py-6">
-          <h1 className="text-3xl font-bold uppercase">
+        <div className="px-12 md:spacing flex flex-wrap text-center md:text-left md:flex-nowrap justify-center md:justify-between items-center py-3 md:py-8 gap-x-8 md:gap-8">
+          <h1 className="text-4xl font-bold uppercase">
             Eide Bailly Suite Level
           </h1>
           <div className="flex gap-8">
@@ -113,9 +115,11 @@ function EideBaillySuiteLevel() {
 
       {/* Info Banner */}
       <section className="bg-jazz-yellow">
-        <div className="spacing flex gap-4 py-5">
-          <Image src={infoIcon} width={64} height={64} alt="Information" />
-          <p className="font-bold text-md">
+        <div className="px-4 md:spacing flex gap-4 py-4 items-center">
+          <div className="shrink-0 py-6">
+            <Image src={infoIcon} width={48} height={48} alt="Information" />
+          </div>
+          <p className="font-bold text-lg">
             Did you know? Whether you're closing an important business deal or
             celebrating with your employees, renting a suite for a Jazz game is
             perfect for any occasion. Call or text 801.325.2203 to learn more.
@@ -125,12 +129,14 @@ function EideBaillySuiteLevel() {
 
       {/* Overview */}
       <section className="bg-black">
-        <div className="spacing flex flex-col text-white">
+        <div className="px-12 md:spacing flex flex-col text-white">
           {/* About Section */}
 
-          <div className="grid grid-cols-5 border-b py-12 pr-10">
-            <h2 className="col-span-1 text-3xl ">About</h2>
-            <div className="col-span-4 gap-x-12 flex justify-between">
+          <div className="flex flex-col items-center sm:grid sm:grid-rows-4 sm:grid-cols-1 md:grid-rows-1 md:grid-cols-5 border-b py-4 md:py-12 pr-10">
+            <h2 className="self-center font-bold md:self-start justify-self-center md:justify-self-start col-span-1 text-3xl py-6 md:py-0">
+              About
+            </h2>
+            <div className="col-span-4 gap-x-12 flex flex-col gap-y-12 ml-12 sm:ml-0 sm:flex-row justify-between row-span-3">
               <div className="flex">
                 <div className="mt-1 mx-2 shrink-0">
                   <Image
@@ -141,8 +147,8 @@ function EideBaillySuiteLevel() {
                   />
                 </div>
                 <div className="flex flex-col gap-3">
-                  <h2 className="text-2xl ">Location</h2>
-                  <p className="text-sm">Suite Level (Level 4)</p>
+                  <h2 className="text-3xl font-bold">Location</h2>
+                  <p className="text-lg">Suite Level (Level 4)</p>
                   <ButtonSolid text="View Arena Map" isSmall={true} />
                 </div>
               </div>
@@ -156,8 +162,8 @@ function EideBaillySuiteLevel() {
                   />
                 </div>
                 <div className="flex flex-col gap-3">
-                  <h2 className="text-2xl ">Capacity</h2>
-                  <p className="text-sm">
+                  <h2 className="text-3xl font-bold">Capacity</h2>
+                  <p className="text-lg">
                     Accommodates 18 - 32 <br /> people
                   </p>
                 </div>
@@ -172,12 +178,12 @@ function EideBaillySuiteLevel() {
                   />
                 </div>
                 <div className="flex flex-col gap-4">
-                  <h2 className="text-2xl ">Event Availability</h2>
-                  <div className="text-sm">
+                  <h2 className="text-3xl font-bold">Event Availability</h2>
+                  <div className="text-lg">
                     <p>Utah Jazz Games</p>
                     <p>(including playoffs)</p>
                   </div>
-                  <p className="text-sm">
+                  <p className="text-lg">
                     Concerts and select <br /> special events
                   </p>
                 </div>
@@ -187,9 +193,11 @@ function EideBaillySuiteLevel() {
 
           {/* Benefits & Amenities Section */}
 
-          <div className="grid grid-cols-5 border-b py-10">
-            <h2 className="col-span-1 text-3xl ">Benefits & Amenities</h2>
-            <div className="flex flex-col col-span-2 pr-24 gap-5 text-sm">
+          <div className="flex flex-col items-center md:items-start sm:grid sm:grid-rows-3 sm:grid-cols-1 md:grid-rows-1 md:grid-cols-5 border-b py-4 md:py-12 lg:pr-10 md:gap-x-8 lg:gap-x-24">
+            <h2 className="self-center font-bold text-center md:text-left md:self-start row-span-1 justify-self-center md:justify-self-start col-span-1 text-3xl py-6 md:py-0">
+              Benefits & Amenities
+            </h2>
+            <div className="flex flex-col col-span-2 row-span-2 ml-[10%] lg:ml-0 xl:pr-20 gap-5 text-md pb-5 md:pb-0">
               <div className="flex">
                 <div className="shrink-0 mr-2">
                   <Image
@@ -252,7 +260,7 @@ function EideBaillySuiteLevel() {
                 <p>Dedicated suite attendant for each game and arena event</p>
               </div>
             </div>
-            <div className="flex flex-col gap-5 col-span-2 pr-24 text-sm">
+            <div className="flex flex-col col-span-2 ml-[10%] lg:ml-0 xl:pr-20 gap-5 text-md pb-5 md:pb-0">
               <div className="flex">
                 <div className="shrink-0 mr-2">
                   <Image
@@ -316,11 +324,13 @@ function EideBaillySuiteLevel() {
 
           {/* Parking Section */}
 
-          <div className="grid grid-cols-5 border-b py-10">
-            <h2 className="col-span-1 text-3xl ">Parking & Check-In</h2>
-            <div className="col-span-2 pr-24 text-sm">
+          <div className="flex flex-col items-center md:items-start sm:grid sm:grid-rows-3 sm:grid-cols-1 md:grid-rows-1 md:grid-cols-5 border-b py-4 md:py-8 md:gap-x-8">
+            <h2 className="self-center font-bold text-center md:text-left md:self-start row-span-1 justify-self-center md:justify-self-start col-span-1 text-3xl py-4 md:py-0">
+              Parking & Check-In
+            </h2>
+            <div className="flex flex-col col-span-2 row-span-2 ml-[10%] lg:ml-0 xl:pr-24 gap-5 text-md pb-5 md:pb-0">
               <div className="flex">
-                <div className="mr-1 -mt-1 -ml-2 shrink-0">
+                <div className="mr-1 -mt-1 shrink-0">
                   <Image
                     src={carIcon}
                     width={32}
@@ -328,7 +338,7 @@ function EideBaillySuiteLevel() {
                     alt="VIP Parking"
                   />
                 </div>
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-4 md:gap-8">
                   <p>
                     VIP parking in the Park Place lot located right next to
                     Vivint Smart Home Arena
@@ -337,9 +347,9 @@ function EideBaillySuiteLevel() {
                 </div>
               </div>
             </div>
-            <div className="col-span-2 pr-28">
+            <div className="flex flex-col col-span-2 row-span-2 ml-[10%] lg:ml-4 xl:pr-24 gap-5 text-md pb-5 md:pb-0">
               <div className="flex">
-                <div className="mr-2 -ml-1 shrink-0">
+                <div className="mr-2 shrink-0">
                   <Image
                     src={signpostIcon}
                     width={24}
@@ -347,7 +357,7 @@ function EideBaillySuiteLevel() {
                     alt="Check-In Locations"
                   />
                 </div>
-                <div className="flex flex-col gap-8 text-sm">
+                <div className="flex flex-col gap-4 md:gap-8">
                   <p>
                     Easy check-in: Talk to the host at any suite level (level 4)
                     entrance to check-in
@@ -360,8 +370,8 @@ function EideBaillySuiteLevel() {
 
           {/* Possible Uses Section */}
           <div className="pb-12">
-            <div className="flex items-center">
-              <div className="shrink-0 mr-5 mt-2">
+            <div className="flex items-center text-center sm:text-left justify-center md:justify-start pt-8 md:py-8 -ml-5 md:ml-0">
+              <div className="shrink-0 mr-3 sm:mr-5 mt-2">
                 <Image
                   src={plusIcon}
                   width={28}
@@ -369,14 +379,14 @@ function EideBaillySuiteLevel() {
                   alt="Possible Uses"
                 />
               </div>
-              <h2 className="text-3xl  py-8">Possible Uses</h2>
+              <h2 className="text-4xl font-bold">Possible Uses</h2>
             </div>
-            <div className="grid grid-cols-5 gap-12">
+            <div className="flex flex-col text-center md:text-left items-center md:items-start sm:grid sm:grid-rows-2 sm:gap-y-4 sm:grid-cols-1 md:grid-rows-1 md:grid-cols-5 md:gap-x-8 lg:gap-x-12">
               <div className="flex flex-col">
-                <h3 className="text-xl  border-b py-2">
+                <h3 className="text-2xl font-bold mx-auto md:mx-0 border-b py-2">
                   Business <br /> Development
                 </h3>
-                <ul className=" py-3 flex flex-col gap-5 text-xs">
+                <ul className="py-3 flex flex-col gap-3 md:gap-5 text-sm">
                   <li>Client Entertainment</li>
                   <li>Relationship Development</li>
                   <li>
@@ -387,10 +397,10 @@ function EideBaillySuiteLevel() {
               </div>
 
               <div className="flex flex-col">
-                <h3 className="text-xl  border-b py-2">
+                <h3 className="text-2xl font-bold mx-auto md:mx-0 border-b py-2">
                   Client <br /> Retention
                 </h3>
-                <ul className=" py-3 flex flex-col gap-3 text-xs">
+                <ul className=" py-3 flex flex-col gap-3 text-sm">
                   <li>Renew Accounts</li>
                   <li>Reduce Attrition</li>
                   <li>Relationship Development</li>
@@ -400,10 +410,10 @@ function EideBaillySuiteLevel() {
               </div>
 
               <div className="flex flex-col">
-                <h3 className="text-xl  border-b py-2">
+                <h3 className="text-2xl font-bold mx-auto md:mx-0 border-b py-2">
                   Employee <br /> Usage
                 </h3>
-                <ul className=" py-3 flex flex-col gap-3 text-xs">
+                <ul className="py-3 flex flex-col gap-3 text-sm">
                   <li>Employee Recruitment & Retention</li>
                   <li>Employee Benefit Programs</li>
                   <li>Employee Incentives</li>
@@ -416,10 +426,10 @@ function EideBaillySuiteLevel() {
               </div>
 
               <div className="flex flex-col">
-                <h3 className="text-xl  border-b py-2">
+                <h3 className="text-2xl font-bold mx-auto md:mx-0 border-b py-2">
                   Executive <br /> Utilization
                 </h3>
-                <ul className=" py-3 flex flex-col gap-3 text-xs">
+                <ul className="py-3 flex flex-col gap-3 text-sm">
                   <li>Executive Team Building</li>
                   <li>Quarterly Meetings</li>
                   <li>Investors & Shareholders</li>
@@ -428,10 +438,10 @@ function EideBaillySuiteLevel() {
               </div>
 
               <div className="flex flex-col">
-                <h3 className="text-xl  border-b py-2">
+                <h3 className="text-2xl font-bold mx-auto md:mx-0 border-b py-2">
                   Community <br /> Relations
                 </h3>
-                <ul className=" py-3 flex flex-col gap-3 text-xs">
+                <ul className="py-3 flex flex-col gap-3 text-sm pb-8">
                   <li>Complement Current Charitable Programs</li>
                   <li>Donate for Auctions or Raffles</li>
                   <li>Host 501(c)(3) Organizations</li>
@@ -452,8 +462,8 @@ function EideBaillySuiteLevel() {
             alt="Eide Bailly Suite"
             objectFit="cover"
           />
-          <div className="bg-black absolute left-0 right-0 bottom-0 opacity-80 h-1/5 flex items-center px-96">
-            <p className="spacing text-white text-center text-md leading-6 px-48">
+          <div className="bg-black absolute left-0 right-0 bottom-0 opacity-80 md:h-1/5 flex items-center py-4 sm:h-1/4">
+            <p className="px-[5%] sm:spacing text-white text-center text-xl leading-6 lg:px-48">
               Tailor your food and beverage experience to your group each night.
               Choose from an expansive menu based on who you will be hosting for
               that event. Submit your food and beverage orders 2 business days

@@ -4,10 +4,10 @@ import videoThumbnail from "../assets/images/video-thumbnail.png";
 
 function DigitalTickets() {
   return (
-    <section className="bg-gray-200">
-      <div className="spacing flex justify-between items-center py-12">
-        <div className="w-3/5 leading-5">
-          <h2 className="text-3xl text-black font-bold pb-4">
+    <section className="bg-digital-gray">
+      <div className="px-12 md:spacing flex justify-between items-center py-12 gap-8">
+        <div className="lg:w-3/5 leading-5 text-lg">
+          <h2 className="text-4xl text-black font-bold pb-4">
             Digital Tickets
           </h2>
           <p className="py-4">
@@ -44,18 +44,20 @@ function DigitalTickets() {
             contact your account representative.
           </p>
           <button className="rounded bg-jazz-yellow border border-black px-3 py-2 my-2 max-w-fit h-fit uppercase cursor-pointer flex justify-between items-center gap-2">
-            <div className="text-black text-sm">
+            <div className="text-black text-sm font-bold">
               Learn more about digital tickets
             </div>
             <div>▶</div>
           </button>
         </div>
-        <Image
-          src={videoThumbnail}
-          width={360}
-          height={150}
-          alt="Video Thumbnail"
-        />
+        <div className="hidden lg:block">
+          <Image
+            src={videoThumbnail}
+            width={360}
+            height={150}
+            alt="Video Thumbnail"
+          />
+        </div>
       </div>
     </section>
   );

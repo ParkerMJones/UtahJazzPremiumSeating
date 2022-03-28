@@ -26,16 +26,25 @@ export default function Home() {
     <>
       {/* Navbar */}
 
-      <div className="bg-black">
-        <nav className="spacing text-white">
-          <div className="border-b flex items-center justify-between py-2">
+      <div className="bg-black border-t">
+        <nav className="px-16 sm:spacing text-white">
+          <div className="border-b flex items-center justify-between gap-8">
             <Link href="/" passHref>
-              <a className="flex max-w-fit items-center gap-4">
-                <Image src={jazzIcon} width={42} height={42} alt="Jazz Icon" />
-                <h3 className="uppercase text-sm">Utah Jazz Premium Seating</h3>
+              <a className="flex max-w-fit items-center gap-3 shrink-0">
+                <div>
+                  <Image
+                    src={jazzIcon}
+                    width={48}
+                    height={48}
+                    alt="Jazz Icon"
+                  />
+                </div>
+                <h3 className="uppercase text-lg hidden sm:block">
+                  Utah Jazz Premium Seating
+                </h3>
               </a>
             </Link>
-            <ol className="flex gap-10 text-jazz-yellow text-xs">
+            <ol className="flex gap-10 text-jazz-yellow text-sm">
               <li>
                 <Link href="/#luxury-suites">Luxury Suites</Link>
               </li>
@@ -54,8 +63,10 @@ export default function Home() {
 
       <section className="bg-black">
         <div className="spacing py-24 pb-32 flex flex-col justify-center items-center gap-4">
-          <h1 className="text-5xl text-white  uppercase">Premium Seating</h1>
-          <h2 className="text-jazz-yellow uppercase text-3xl pb-2">
+          <h1 className="text-6xl text-white font-bold uppercase text-center">
+            Premium Seating
+          </h1>
+          <h2 className="text-jazz-yellow uppercase text-4xl pb-2 text-center">
             The best way to enjoy all the excitement
           </h2>
           <p className="text-white text-center text-lg">
@@ -77,7 +88,7 @@ export default function Home() {
       {/* Cards */}
 
       <section className="mb-16">
-        <div className="spacing flex justify-center gap-5 -mt-16">
+        <div className="spacing grid place-content-center md:flex justify-center gap-5 -mt-16">
           <ImageCard
             image={courtsideSuite}
             title="Luxury Suites"
@@ -99,11 +110,11 @@ export default function Home() {
       {/* Luxury Suites */}
 
       <section className="bg-black" id="luxury-suites">
-        <div className="spacing">
-          <h2 className="text-jazz-yellow text-3xl uppercase py-16 font-bold">
+        <div className="spacing pb-8">
+          <h2 className="text-jazz-yellow text-4xl uppercase py-16 font-bold">
             Luxury Suites
           </h2>
-          <div className="grid grid-cols-2 grid-rows-2 gap-x-7 gap-y-4">
+          <div className="grid sm:grid-cols-2 grid-rows-2 gap-x-7 gap-y-4">
             <Link href="/EideBaillySuiteLevel" passHref>
               <a>
                 <ImageWithText image={EBS4} text="Eide Bailly Suite Level" />
@@ -120,10 +131,10 @@ export default function Home() {
 
       <section className="bg-black" id="exclusive-clubs">
         <div className="spacing pb-24">
-          <h2 className="text-jazz-yellow text-3xl uppercase py-12 pt-16 font-bold">
+          <h2 className="text-jazz-yellow text-4xl uppercase py-12 pt-12 font-bold">
             Exclusive Clubs
           </h2>
-          <div className="grid grid-cols-2 grid-rows-3 gap-x-7 gap-y-4">
+          <div className="grid sm:grid-cols-2 grid-rows-3 gap-x-7 gap-y-4">
             <ImageWithText image={toyotaClub} text="Toyota Club" />
             <ImageWithText image={eideBaillyClub} text="Eide Bailly Club" />
             <ImageWithText image={WCF} text="WCF Insurance Club" />

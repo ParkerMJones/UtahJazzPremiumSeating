@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         "jazz-yellow": "#FBED2A",
+        "digital-gray": "#E3E5E3",
       },
       fontFamily: {
         jazzExtended: ["wt_jazzbold_extended", ...defaultTheme.fontFamily.sans],

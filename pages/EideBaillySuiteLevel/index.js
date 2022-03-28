@@ -13,6 +13,13 @@ import EBS5 from "../../assets/images/JAZ2122_Premium_EBS5.jpg";
 import jazzIcon from "../../assets/images/jazzIcon.png";
 import downloadIcon from "../../assets/images/downloadIcon.png";
 import infoIcon from "../../assets/images/infoIcon.svg";
+import locationIcon from "../../assets/images/locationIcon.png";
+import capacityIcon from "../../assets/images/capacityIcon.png";
+import bulbIcon from "../../assets/images/bulbIcon.png";
+import carIcon from "../../assets/images/carIcon.png";
+import signpostIcon from "../../assets/images/signpostIcon.png";
+import checkmarkIcon from "../../assets/images/checkmarkIcon.png";
+import plusIcon from "../../assets/images/plusIcon.png";
 
 function EideBaillySuiteLevel() {
   return (
@@ -90,22 +97,52 @@ function EideBaillySuiteLevel() {
           <div className="grid grid-cols-5 border-b py-12">
             <h2 className="col-span-1 text-3xl font-semibold">About</h2>
             <div className="col-span-4 flex justify-between">
-              <div className="flex flex-col gap-4">
-                <h2 className="text-3xl">Location</h2>
-                <p>Suite Level (Level 4)</p>
-                <ButtonSolid text="View Arena Map" />
-              </div>
-              <div className="flex flex-col gap-4">
-                <h2 className="text-3xl">Capacity</h2>
-                <p>Accommodates 18 - 32 people</p>
-              </div>
-              <div className="flex flex-col gap-4">
-                <h2 className="text-3xl">Event Availability</h2>
-                <div>
-                  <p>Utah Jazz Games</p>
-                  <p>(including playoffs)</p>
+              <div className="flex">
+                <div className="mt-2 mr-2">
+                  <Image
+                    src={locationIcon}
+                    width={24}
+                    height={24}
+                    alt="Location"
+                  />
                 </div>
-                <p>Concerts and select special events</p>
+                <div className="flex flex-col gap-4">
+                  <h2 className="text-3xl">Location</h2>
+                  <p>Suite Level (Level 4)</p>
+                  <ButtonSolid text="View Arena Map" />
+                </div>
+              </div>
+              <div className="flex">
+                <div className="mr-2">
+                  <Image
+                    src={capacityIcon}
+                    width={32}
+                    height={32}
+                    alt="Capacity"
+                  />
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h2 className="text-3xl">Capacity</h2>
+                  <p>Accommodates 18 - 32 people</p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="mr-2 mt-1">
+                  <Image
+                    src={bulbIcon}
+                    width={24}
+                    height={24}
+                    alt="Event Availability"
+                  />
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h2 className="text-3xl">Event Availability</h2>
+                  <div>
+                    <p>Utah Jazz Games</p>
+                    <p>(including playoffs)</p>
+                  </div>
+                  <p>Concerts and select special events</p>
+                </div>
               </div>
             </div>
           </div>
@@ -116,28 +153,128 @@ function EideBaillySuiteLevel() {
             <h2 className="col-span-1 text-3xl font-semibold">
               Benefits & Amenities
             </h2>
-            <div className="flex flex-col gap-4 col-span-2 pr-32">
-              <p>Private Suite</p>
-              <p>420 - 490 square feet depending on the location</p>
-              <p>
-                Lounge seating area for four with coffee table at the back of
-                suite
-              </p>
-              <p>
-                High-top counter in middle, and drink rails at the back of the
-                fixed-seating area
-              </p>
-              <p>Dedicated suite attendant for each game and arena event</p>
+            <div className="flex flex-col col-span-2 pr-32 gap-6">
+              <div className="flex">
+                <div className="shrink-0 mr-2">
+                  <Image
+                    src={checkmarkIcon}
+                    width={20}
+                    height={20}
+                    alt="Checkmark"
+                  />
+                </div>
+                <p>Private Suite</p>
+              </div>
+              <div className="flex">
+                <div className="shrink-0 mr-2">
+                  <Image
+                    src={checkmarkIcon}
+                    width={20}
+                    height={20}
+                    alt="Checkmark"
+                  />
+                </div>
+                <p>420 - 490 square feet depending on the location</p>
+              </div>
+              <div className="flex">
+                <div className="shrink-0 mr-2">
+                  <Image
+                    src={checkmarkIcon}
+                    width={20}
+                    height={20}
+                    alt="Checkmark"
+                  />
+                </div>
+                <p>
+                  Lounge seating area for four with coffee table at the back of
+                  suite
+                </p>
+              </div>
+              <div className="flex">
+                <div className="shrink-0 mr-2">
+                  <Image
+                    src={checkmarkIcon}
+                    width={20}
+                    height={20}
+                    alt="Checkmark"
+                  />
+                </div>
+                <p>
+                  High-top counter in middle, and drink rails at the back of the
+                  fixed-seating area
+                </p>
+              </div>
+              <div className="flex">
+                <div className="shrink-0 mr-2">
+                  <Image
+                    src={checkmarkIcon}
+                    width={20}
+                    height={20}
+                    alt="Checkmark"
+                  />
+                </div>
+                <p>Dedicated suite attendant for each game and arena event</p>
+              </div>
             </div>
-            <div className="flex flex-col gap-4 col-span-2 pr-32">
-              <p>Flat screen TV in each suite</p>
-              <p>WiFi access</p>
-              <p>18–32 tickets in a luxury suite (varies by location)</p>
-              <p>VIP parking passes</p>
-              <p>
-                Food credit for catering to both Utah Jazz games and arena
-                events
-              </p>
+            <div className="flex flex-col gap-6 col-span-2 pr-32">
+              <div className="flex">
+                <div className="shrink-0 mr-2">
+                  <Image
+                    src={checkmarkIcon}
+                    width={20}
+                    height={20}
+                    alt="Checkmark"
+                  />
+                </div>
+                <p>Flat screen TV in each suite</p>
+              </div>
+              <div className="flex">
+                <div className="shrink-0 mr-2">
+                  <Image
+                    src={checkmarkIcon}
+                    width={20}
+                    height={20}
+                    alt="Checkmark"
+                  />
+                </div>
+                <p>WiFi access</p>
+              </div>
+              <div className="flex">
+                <div className="shrink-0 mr-2">
+                  <Image
+                    src={checkmarkIcon}
+                    width={20}
+                    height={20}
+                    alt="Checkmark"
+                  />
+                </div>
+                <p>18–32 tickets in a luxury suite (varies by location)</p>
+              </div>
+              <div className="flex">
+                <div className="shrink-0 mr-2">
+                  <Image
+                    src={checkmarkIcon}
+                    width={20}
+                    height={20}
+                    alt="Checkmark"
+                  />
+                </div>
+                <p>VIP parking passes</p>
+              </div>
+              <div className="flex">
+                <div className="shrink-0 mr-2">
+                  <Image
+                    src={checkmarkIcon}
+                    width={20}
+                    height={20}
+                    alt="Checkmark"
+                  />
+                </div>
+                <p>
+                  Food credit for catering to both Utah Jazz games and arena
+                  events
+                </p>
+              </div>
             </div>
           </div>
 
@@ -147,25 +284,59 @@ function EideBaillySuiteLevel() {
             <h2 className="col-span-1 text-3xl font-semibold">
               Parking & Check-In
             </h2>
-            <div className="col-span-2 flex flex-col gap-8 pr-32">
-              <p>
-                VIP parking in the Park Place lot located right next to Vivint
-                Smart Home Arena
-              </p>
-              <ButtonSolid text="View Parking Map" />
+            <div className="col-span-2 pr-32">
+              <div className="flex">
+                <div className="mr-2 -mt-1 -ml-2">
+                  <Image
+                    src={carIcon}
+                    width={64}
+                    height={64}
+                    alt="VIP Parking"
+                  />
+                </div>
+                <div className="flex flex-col gap-8">
+                  <p>
+                    VIP parking in the Park Place lot located right next to
+                    Vivint Smart Home Arena
+                  </p>
+                  <ButtonSolid text="View Parking Map" />
+                </div>
+              </div>
             </div>
-            <div className="col-span-2 flex flex-col gap-8 pr-32">
-              <p>
-                Easy check-in: Talk to the host at any suite level (level 4)
-                entrance to check-in
-              </p>
-              <ButtonSolid text="View Check-In Locations" />
+            <div className="col-span-2 pr-32">
+              <div className="flex">
+                <div className="mt-1 mr-3 -ml-1">
+                  <Image
+                    src={signpostIcon}
+                    width={48}
+                    height={48}
+                    alt="Check-In Locations"
+                  />
+                </div>
+                <div className=" flex flex-col gap-8 ">
+                  <p>
+                    Easy check-in: Talk to the host at any suite level (level 4)
+                    entrance to check-in
+                  </p>
+                  <ButtonSolid text="View Check-In Locations" />
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Possible Uses Section */}
           <div className="py-4 pb-12">
-            <h2 className="text-4xl font-semibold py-8">Possible Uses</h2>
+            <div className="flex items-center">
+              <div className="shrink-0 mr-6 mt-2">
+                <Image
+                  src={plusIcon}
+                  width={32}
+                  height={32}
+                  alt="Possible Uses"
+                />
+              </div>
+              <h2 className="text-4xl font-semibold py-8">Possible Uses</h2>
+            </div>
             <div className="grid grid-cols-5 gap-12">
               <div className="flex flex-col">
                 <h3 className="text-2xl border-b py-2">

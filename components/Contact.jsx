@@ -22,11 +22,13 @@ function Contact() {
                 alt="Phone Number"
                 className="bg-jazz-yellow rounded-md"
               />
-              <p className="pl-1">801 - 325 - 2105</p>
+              <p className="pl-1 font-mono tracking-wider text-lg">
+                801-325-2105
+              </p>
             </div>
             <div className="flex gap-2 items-center -ml-1">
               <Image src={mail} width={32} height={32} alt="Email" />
-              <p>bizdev@utahjazz.com</p>
+              <p className="font-mono text-lg">bizdev@utahjazz.com</p>
             </div>
             <p>
               With options like single-game tickets, suite rentals and special
@@ -35,31 +37,31 @@ function Contact() {
               customize a package to fit your group and budget.
             </p>
           </div>
-          <form className="flex flex-col gap-6">
+          <form className="flex flex-col gap-5">
             <div className="flex flex-col">
               <label htmlFor="input">User Input</label>
               <input
                 type="text"
-                className="rounded-tr rounded-bl py-2 text-black"
+                className="rounded-tr rounded-bl py-1 text-black"
               />
             </div>
             <div className="flex flex-col">
               <label htmlFor="input">User Input</label>
               <input
                 type="text"
-                className="rounded-tr rounded-bl py-2 text-black"
+                className="rounded-tr rounded-bl py-1 text-black"
               />
             </div>
             <div className="flex flex-col">
               <label htmlFor="input">User Input</label>
               <input
                 type="text"
-                className="rounded-tr rounded-bl py-2 text-black"
+                className="rounded-tr rounded-bl py-1 text-black"
               />
             </div>
             <div className="flex flex-col">
               <label htmlFor="input">Options</label>
-              <select className="rounded-tr rounded-bl py-2 px-2 border-r-8 border-r-transparent text-sm text-gray-400">
+              <select className="rounded-tr rounded-bl py-1 px-2 border-r-8 border-r-transparent text-sm text-gray-400">
                 <option value="" disabled selected>
                   Select...
                 </option>
@@ -72,10 +74,12 @@ function Contact() {
               <label htmlFor="message">Short Text</label>
               <textarea
                 type="text"
-                className="rounded-tr rounded-bl py-3 resize-none text-black"
+                className="rounded-tr rounded-bl py-2 resize-none text-black"
               />
             </div>
-            <ButtonSolid text="Submit" />
+            <div className="-ml-[1px]">
+              <ButtonSolid text="Submit" />
+            </div>
           </form>
         </div>
       </div>

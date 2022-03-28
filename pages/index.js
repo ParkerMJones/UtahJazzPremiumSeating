@@ -54,13 +54,11 @@ export default function Home() {
 
       <section className="bg-black">
         <div className="spacing py-24 pb-32 flex flex-col justify-center items-center gap-4">
-          <h1 className="text-5xl text-white font-semibold uppercase">
-            Premium Seating
-          </h1>
+          <h1 className="text-5xl text-white  uppercase">Premium Seating</h1>
           <h2 className="text-jazz-yellow uppercase text-3xl pb-2">
             The best way to enjoy all the excitement
           </h2>
-          <p className="text-white text-center font-light text-lg">
+          <p className="text-white text-center text-lg">
             Whether you’re entertaining business clients, closing a major deal,
             or socializing with family and friends, a luxury suite provides all
             the convenience, comfort and service you desire. As the home of the
@@ -102,7 +100,7 @@ export default function Home() {
 
       <section className="bg-black" id="luxury-suites">
         <div className="spacing">
-          <h2 className="text-jazz-yellow text-3xl uppercase font-semibold py-16">
+          <h2 className="text-jazz-yellow text-3xl uppercase py-16 font-bold">
             Luxury Suites
           </h2>
           <div className="grid grid-cols-2 grid-rows-2 gap-x-7 gap-y-4">
@@ -122,7 +120,7 @@ export default function Home() {
 
       <section className="bg-black" id="exclusive-clubs">
         <div className="spacing pb-24">
-          <h2 className="text-jazz-yellow text-3xl uppercase font-semibold py-12 pt-16">
+          <h2 className="text-jazz-yellow text-3xl uppercase py-12 pt-16 font-bold">
             Exclusive Clubs
           </h2>
           <div className="grid grid-cols-2 grid-rows-3 gap-x-7 gap-y-4">

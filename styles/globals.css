@@ -27,3 +27,90 @@
     padding: 0 4rem;
   }
 }
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+  opacity: 1 !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fbed2a !important;
+}
+
+.swiper-button-next {
+  color: black !important;
+  padding-right: 3% !important;
+}
+
+.swiper-button-prev {
+  color: black !important;
+  padding-left: 3% !important;
+}
+
+@layer base {
+  @font-face {
+    font-family: "wt_jazzbold_extended";
+    src: url("https://www.nba.com/resources/static/team/v2/jazz/1_jazz-extended-webfont.woff2")
+        format("woff2"),
+      url("https://www.nba.com/resources/static/team/v2/jazz/1_jazz-extended-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "wt_jazzbold_semi_condensed";
+    src: url("https://www.nba.com/resources/static/team/v2/jazz/1_jazz-semi_condensed-webfont.woff2")
+        format("woff2"),
+      url("https://www.nba.com/resources/static/team/v2/jazz/1_jazz-semi_condensed-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "monument";
+    src: url("https://www.nba.com/resources/static/team/v2/jazz/ABCMonumentGrotesk-Bold.woff2")
+        format("woff2"),
+      url("https://www.nba.com/resources/static/team/v2/jazz/ABCMonumentGrotesk-Bold.woff")
+        format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "monument";
+    src: url("https://www.nba.com/resources/static/team/v2/jazz/ABCMonumentGrotesk-BoldItalic.woff2")
+        format("woff2"),
+      url("https://www.nba.com/resources/static/team/v2/jazz/ABCMonumentGrotesk-BoldItalic.woff")
+        format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "monument";
+    src: url("https://www.nba.com/resources/static/team/v2/jazz/ABCMonumentGrotesk-Regular.woff2")
+        format("woff2"),
+      url("https://www.nba.com/resources/static/team/v2/jazz/ABCMonumentGrotesk-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "monument";
+    src: url("https://www.nba.com/resources/static/team/v2/jazz/ABCMonumentGrotesk-RegularItalic.woff2")
+        format("woff2"),
+      url("https://www.nba.com/resources/static/team/v2/jazz/ABCMonumentGrotesk-RegularItalic.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "monument_regular_mono";
+    src: url("https://www.nba.com/resources/static/team/v2/jazz/ABCMonumentGroteskMono-Regular.woff2")
+        format("woff2"),
+      url("https://www.nba.com/resources/static/team/v2/jazz/ABCMonumentGroteskMono-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}

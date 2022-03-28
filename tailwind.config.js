@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -8,7 +10,16 @@ module.exports = {
       colors: {
         "jazz-yellow": "#FBED2A",
       },
+      fontFamily: {
+        jazzExtended: ["wt_jazzbold_extended", ...defaultTheme.fontFamily.sans],
+        jazzCondensed: [
+          "wt_jazzbold_semi_condensed",
+          ...defaultTheme.fontFamily.sans,
+        ],
+        sans: ["monument", ...defaultTheme.fontFamily.sans],
+        mono: ["monument_regular_mono", ...defaultTheme.fontFamily.mono],
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };

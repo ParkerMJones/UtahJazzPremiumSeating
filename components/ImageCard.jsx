@@ -17,7 +17,7 @@ function ImageCard({ image, title, text, destination }) {
           <h2 className="text-2xl text-jazz-yellow font-bold row-span-1">
             {title}
           </h2>
-          <p className="text-sm leading-5 row-span-3">{text}</p>
+          <p className="text-sm row-span-3">{text}</p>
           <ButtonOutline
             text="Learn More"
             className="row-span-1"

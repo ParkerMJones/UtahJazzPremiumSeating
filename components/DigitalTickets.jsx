@@ -44,7 +44,7 @@ function DigitalTickets() {
             contact your account representative.
           </p>
           <button className="rounded bg-jazz-yellow border border-black px-3 py-2 my-2 max-w-fit h-fit uppercase cursor-pointer flex justify-between items-center gap-2">
-            <div className="text-black font-semibold text-sm">
+            <div className="text-black text-sm">
               Learn more about digital tickets
             </div>
             <div>▶</div>

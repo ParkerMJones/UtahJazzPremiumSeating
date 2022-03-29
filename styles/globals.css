@@ -22,7 +22,7 @@
 
 @layer components {
   .spacing {
-    max-width: 80rem;
+    max-width: 96rem;
     margin: 0 auto;
     padding-left: 6rem;
     padding-right: 6rem;

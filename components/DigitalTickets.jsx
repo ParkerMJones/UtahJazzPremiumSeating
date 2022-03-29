@@ -49,12 +49,16 @@ function DigitalTickets() {
           </button>
         </div>
         <div className="hidden lg:block">
-          <Image
-            src="/video-thumbnail.png"
-            width={360}
-            height={150}
-            alt="Video Thumbnail"
-          />
+          <div className="w-96 h-60 bg-white border border-neutral-400 grid place-content-center">
+            <div className="shrink-0 opacity-25">
+              <Image
+                src="/playIcon.png"
+                width={60}
+                height={60}
+                alt="play button"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

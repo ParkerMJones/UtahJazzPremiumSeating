@@ -67,7 +67,7 @@ function EideBaillySuiteLevel() {
             <h1 className="text-4xl font-bold uppercase">
               Eide Bailly Suite Level
             </h1>
-            <div className="flex gap-8">
+            <div className="flex gap-8 justify-between">
               <ButtonOutline
                 isYellow={false}
                 text="Download Info"
@@ -340,7 +340,7 @@ function EideBaillySuiteLevel() {
               <h2 className="self-center font-bold text-center md:text-left md:self-start row-span-1 justify-self-center md:justify-self-start col-span-1 text-3xl py-4 md:py-0">
                 Parking & Check-In
               </h2>
-              <div className="flex flex-col col-span-2 row-span-2 ml-[10%] lg:ml-0 xl:pr-24 gap-5 text-md pb-5 md:pb-0">
+              <div className="px-16 md:px-0 flex flex-col col-span-2 row-span-2 md:ml-[10%] lg:ml-0 xl:pr-24 gap-5 text-md pb-5 md:pb-0">
                 <div className="flex">
                   <div className="mr-1 -mt-1 shrink-0">
                     <Image
@@ -350,7 +350,7 @@ function EideBaillySuiteLevel() {
                       alt="VIP Parking"
                     />
                   </div>
-                  <div className="flex flex-col gap-4 md:gap-8">
+                  <div className="flex flex-col gap-4 md:gap-8 items-center md:items-start">
                     <p>
                       VIP parking in the Park Place lot located right next to
                       Vivint Smart Home Arena
@@ -359,7 +359,7 @@ function EideBaillySuiteLevel() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col col-span-2 row-span-2 ml-[10%] lg:ml-4 xl:pr-24 gap-5 text-md pb-5 md:pb-0">
+              <div className="px-16 md:px-0 flex flex-col col-span-2 row-span-2 md:ml-[10%] lg:ml-4 xl:pr-24 gap-5 text-md pb-5 md:pb-0">
                 <div className="flex">
                   <div className="mr-2 shrink-0">
                     <Image
@@ -369,7 +369,7 @@ function EideBaillySuiteLevel() {
                       alt="Check-In Locations"
                     />
                   </div>
-                  <div className="flex flex-col gap-4 md:gap-8">
+                  <div className="flex flex-col gap-4 md:gap-8 items-center md:items-start">
                     <p>
                       Easy check-in: Talk to the host at any suite level (level
                       4) entrance to check-in
